@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello</title>
-    {% if name %}
-        <h1>Hello {{ name }}</h1>
-    {% else %}
-        <h1>Hello World!</h1>
-    {% endif %}
-</head>
-<body>
-
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+    <h1 class="BigTitle">Ha ha ha</h1>
+{% endblock %}
